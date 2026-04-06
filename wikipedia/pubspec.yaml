@@ -1,8 +1,7 @@
-name: cli
+name: wikipedia
 description: A sample command-line application.
 version: 1.0.0
 resolution: workspace
-publish_to: none
 # repository: https://github.com/my_org/my_repo
 
 environment:
@@ -10,9 +9,6 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  http: ^1.6.0
-  command_runner:
-    path: ../command_runner
   # path: ^1.8.0
 
 dev_dependencies:
