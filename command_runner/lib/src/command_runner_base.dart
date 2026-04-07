@@ -37,6 +37,13 @@ class CommandRunner {
       } else {
         rethrow;
       }
+    } on Error catch (error) {
+      // ← Also catch Error
+      if (onError != null) {
+        onError!(error);
+      } else {
+        rethrow;
+      }
     }
   }
 
